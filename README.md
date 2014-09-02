@@ -67,6 +67,35 @@ __Known issue__: When It's executed on a webbrowser, It blocks the screen until 
 	Route_Optimizer.doOptimize(maxIterations, numAnts, decayFactor, heuristicCoeff, greedinessFactor);
 	//from example.js
 	var OptimalRoute = Route_Optimizer.doOptimize();
+	| Parameter | Description |
+	| ------------- | ----------- |
+	|maxIterations | Number of iterations for find the solution. <br>**Optional**. Typically a value between 200 and 500 times the numAnts value.|
+	|numAnts | Number of ants (cars) that run the trials. <br>**Optional**. A typical value is the half of locations plus one. |
+	|decayFactor | Rate at which historic information is lost. <br>**Optional**. _Recommended values_: 0.1-0.5, _Default value_: Random number between 0.1 and 0.5|
+	|heuristicCoeff | Controls the amount of contribution problem-specific heuristic information plays in a components probability of selection. <br>**Optional**. _Recommended values_: 2-5, _Default value_: Random number between 2 and 5|
+	|greedinessFactor | Controls the amount of contribution problem-specific heuristic information plays in a components probability of selection. <br>**Optional**. _Recommended values_: 0.8-1.3, _Default value_: Random number between 0.8 and 1.3|
+
+	Returns an JSON object with the optimal route.
+
+4. You can convert the JSON object to something more readable with _convertToHuman_ method.
+	
+	```javascript
+	var optimalRouteStr = Route_Optimizer.convertToHuman(optimalRoute);
+	
+	```
+	| Parameter | Description |
+	| ------------- | ----------- |
+	|optimalRoute | Optimal route returned in the previous step <br>**Mandatory**.|
+
+## Support
+
+Drop me line on: <http://d-castillo.info/contactme/> or to: davcs86@gmail.com
+
+## Donations
+
+Did this project help you to save (or earn) some money?<br>
+Please, support to the author by making a small donation.
+
+<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2PK29ZFPUZ5WL' target='_blank'><img width="150" style='border:0px;width:150px' src='http://ko-fi.com/img/button-4.png' border='0' alt='Buy Me A Coffee :) @ PayPal' /></a>
 
 
-		
