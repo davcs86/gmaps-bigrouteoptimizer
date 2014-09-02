@@ -67,6 +67,7 @@ __Known issue__: When It's executed on a webbrowser, It blocks the screen until 
 	Route_Optimizer.doOptimize(maxIterations, numAnts, decayFactor, heuristicCoeff, greedinessFactor);
 	//from example.js
 	var OptimalRoute = Route_Optimizer.doOptimize();
+	```
 	| Parameter | Description |
 	| ------------- | ----------- |
 	|maxIterations | Number of iterations for find the solution. <br>**Optional**. Typically a value between 200 and 500 times the numAnts value.|
